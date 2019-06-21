@@ -20,7 +20,9 @@ describe('lib/helpers.js', () => {
     expect(Object.keys(helpers.fs)).toEqual([
       'readFile',
       'stat',
-      'writeFile'
+      'writeFile',
+      'mkdirSync',
+      'existsSync'
     ]);
 
     expect(promisify).toHaveBeenCalledTimes(3);
